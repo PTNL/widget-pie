@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <script>
+            (function (source) {
+                if (source) {
+                    const href = decodeURIComponent(source.slice(4));
+
+                    document.write(`<link rel="stylesheet" href="${href}" />`);
+                }
+            })(
+                location.search
+                    .split(/[?&]/)
+                    .find((item) => item.startsWith('css=')),
+            );
+        </script>
+
+        <link rel="stylesheet" href="assets/index.css" />
+    </head>
+
+    <body>
+        <canvas id="root" style="width:100%; height:100%"></canvas>
+
+        <script src="assets/chart.min.js"></script>
+        <script src="assets/chartjs-plugin-datalabels.js"></script>
+
+        <script src="index.js"></script>
+    </body>
+</html>
