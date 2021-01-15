@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/chart.js": "^2.9.28",
-    "ptnl-constructor-sdk": "^0.7.37"
+    "@types/chart.js": "^2.9.29",
+    "ptnl-constructor-sdk": "^0.7.41"
   }
 }
